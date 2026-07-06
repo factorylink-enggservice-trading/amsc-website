@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | AMSC FactoryLink Industrial Engineering Services</title>
+<meta name="description" content="Process mechanization, PLC/HMI automation, fabrication, parts machining, TPM, and third-party maintenance — the full list of what AMSC FactoryLink builds and fixes.">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:title" content="AMSC FactoryLink | Industrial Engineering Services">
+<meta property="og:description" content="Process mechanization, PLC/HMI automation, fabrication, parts machining, TPM, and third-party maintenance — the full list of what AMSC FactoryLink builds and fixes.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/logo.png">
+<meta property="og:url" content="https://amsc-factorylink.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Page-specific style for the In Practice photo grid – portrait (3:4) for your 1300x1500 images -->
+<style>
+  .practice-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+  }
+  .practice-item {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--line);
+    transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  }
+  .practice-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -16px rgba(10, 21, 36, 0.18);
+  }
+  .practice-item img {
+    width: 100%;
+    aspect-ratio: 3 / 4;  /* changed from 4/3 to 3/4 – perfect for your 1300x1500 images */
+    object-fit: cover;
+    display: block;
+  }
+  .practice-label {
+    display: block;
+    padding: 14px 18px 16px;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--ink-900);
+    border-top: 1px solid var(--line);
+    background: var(--white);
+  }
+  @media (max-width: 900px) {
+    .practice-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .practice-grid { grid-template-columns: 1fr; }
+  }
+  .practice-item {
+    position: relative;
+    cursor: pointer;
+  }
+  .practice-item.expanded {
+    grid-column: span 2;
+  }
+  .practice-item.expanded img {
+    aspect-ratio: auto;
+    object-fit: contain;
+    background: var(--paper-dim);
+  }
+  .practice-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(12, 20, 32, 0.6);
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+  }
+  .practice-close svg {
+    width: 16px;
+    height: 16px;
+  }
+  .practice-item.expanded .practice-close {
+    display: flex;
+  }
+  .practice-item:focus-visible {
+    outline: 2px solid var(--ink-900);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="assets/img/logo.png" alt="AMSC FactoryLink logo"></span>
+      <span class="brand-name">AMSC FactoryLink<span>Industrial Engineering Services</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-outline">Request a Quote</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb">Home / <span>Services</span></p>
+    <h1>Six core disciplines. Nine hands-on capabilities.</h1>
+    <p>From first sketch to the 2am breakdown call — everything below happens in-house, on our own machines.</p>
+  </div>
+</section>
+
+<!-- ================= CORE SERVICE LINES ================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Core Service Lines</span>
+      <h2>What we're built around.</h2>
+    </div>
+    <div class="grid-3">
+      <div class="service-card reveal">
+        <span class="tag">Mechanization</span>
+        <h3>Process Mechanization</h3>
+        <p>Turning manual production steps into mechanized systems that don't need a person doing it by hand.</p>
+        <ul>
+          <li>Custom mechanized system design &amp; fabrication</li>
+          <li>Material handling: conveyors, lifters, feeders</li>
+          <li>Semi-automated equipment for manual lines</li>
+        </ul>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <span class="tag">Automation</span>
+        <h3>Mechanical &amp; Electronic Integration</h3>
+        <p>Wiring sensors, PLCs, and control systems into equipment that used to run on relays and guesswork.</p>
+        <ul>
+          <li>Sensor, PLC &amp; control system integration</li>
+          <li>Automation retrofits on existing machines</li>
+          <li>Full design → build → integrate projects</li>
+        </ul>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <span class="tag">Lean</span>
+        <h3>Lean Manufacturing Solutions</h3>
+        <p>Mapping the process, cutting the waste, and training the floor to keep it that way.</p>
+        <ul>
+          <li>Process mapping &amp; value stream analysis</li>
+          <li>Kaizen, 5S &amp; continuous improvement training</li>
+          <li>Lean audits &amp; performance monitoring</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="tag">TPM</span>
+        <h3>Total Productive Maintenance</h3>
+        <p>Preventive and predictive maintenance built around your actual equipment, not a generic checklist.</p>
+        <ul>
+          <li>Preventive &amp; predictive maintenance programs</li>
+          <li>OEE measurement &amp; improvement</li>
+          <li>Autonomous maintenance training for operators</li>
+        </ul>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <span class="tag">Low-Cost Auto</span>
+        <h3>Low-Cost Automation</h3>
+        <p>Jigs, fixtures, and retrofits sized for what a small or mid-size line can actually justify.</p>
+        <ul>
+          <li>Affordable jigs, fixtures &amp; semi-auto devices</li>
+          <li>Retrofits for small-to-mid manufacturers</li>
+          <li>ROI-based automation planning</li>
+        </ul>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <span class="tag">Maintenance</span>
+        <h3>Third-Party Maintenance</h3>
+        <p>Outsourced mechanical, electrical, and electronic upkeep — including the after-hours breakdown call.</p>
+        <ul>
+          <li>Outsourced maintenance contracts</li>
+          <li>Skilled technical manpower supply</li>
+          <li>24/7 breakdown response</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES OFFERED ================= -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Day-to-Day Capabilities</span>
+      <h2>Services offered</h2>
+      <p>The specific work that fills our schedule, week to week.</p>
+    </div>
+    <div class="offer-grid reveal" style="border-color: var(--line-dark); background: var(--line-dark);">
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">01</span>
+        <h4>Parts Machining</h4>
+      </div>
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">02</span>
+        <h4>Parts Improvement Design &amp; Actual</h4>
+      </div>
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">03</span>
+        <h4>Fabrication</h4>
+      </div>
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">04</span>
+        <h4>PLC/HMI Integration Programming &amp; Automation Solution</h4>
+      </div>
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">05</span>
+        <h4>PLC/HMI/Drives/Inverter/Electronic Controls Repair &amp; Restoration</h4>
+      </div>
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">06</span>
+        <h4>Designing or Conceptualization</h4>
+      </div>
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">07</span>
+        <h4>Maintenance and Production Support</h4>
+      </div>
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">08</span>
+        <h4>Process &amp; Packaging Machine Restoration</h4>
+      </div>
+      <div class="offer-item" style="background: var(--navy-900);">
+        <span class="idx">09</span>
+        <h4>Civil and Structural Work</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IN PRACTICE PHOTO STRIP ================= -->
+<section class="section section-paper">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">In Practice</span>
+      <h2>What that actually looks like on the floor.</h2>
+      <p>Real shop-floor photos — our work, our hands, our equipment.</p>
+    </div>
+
+    <div class="practice-grid reveal">
+      <div class="practice-item" role="button" tabindex="0" aria-expanded="false" aria-label="Enlarge photo: AMSC technicians working on a mechanized system">
+        <img src="assets/img/services1.jpg" alt="AMSC technicians working on a mechanized system">
+        <button class="practice-close" type="button" aria-label="Collapse photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="practice-item" role="button" tabindex="0" aria-expanded="false" aria-label="Enlarge photo: PLC/HMI control panel integration">
+        <img src="assets/img/services2.jpg" alt="PLC/HMI control panel integration">
+        <button class="practice-close" type="button" aria-label="Collapse photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="practice-item" role="button" tabindex="0" aria-expanded="false" aria-label="Enlarge photo: Fabrication and welding on the shop floor">
+        <img src="assets/img/services3.jpg" alt="Fabrication and welding on the shop floor">
+        <button class="practice-close" type="button" aria-label="Collapse photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="practice-item" role="button" tabindex="0" aria-expanded="false" aria-label="Enlarge photo: Restoration of a packaging machine">
+        <img src="assets/img/services4.jpg" alt="Restoration of a packaging machine">
+        <button class="practice-close" type="button" aria-label="Collapse photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Industries We Serve</span>
+      <h2>Built for production floors, not showrooms.</h2>
+    </div>
+    <div class="btn-row reveal">
+      <span class="btn btn-outline-dark" style="cursor:default;">Automotive &amp; Auto Parts</span>
+      <span class="btn btn-outline-dark" style="cursor:default;">Food &amp; Beverage Processing</span>
+      <span class="btn btn-outline-dark" style="cursor:default;">Electronics &amp; Semiconductors</span>
+      <span class="btn btn-outline-dark" style="cursor:default;">Packaging &amp; Plastics</span>
+      <span class="btn btn-outline-dark" style="cursor:default;">Consumer Goods / FMCG</span>
+      <span class="btn btn-outline-dark" style="cursor:default;">Logistics &amp; Material Handling</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR EDGE ================= -->
+<section class="section section-paper">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Edge</span>
+      <h2>Why this list holds up.</h2>
+    </div>
+    <div class="values-list reveal">
+      <div class="value-row">
+        <span class="idx">01</span>
+        <h4>Mechatronics</h4>
+        <p>Real strength in mechanical + electronic integration, not just one or the other.</p>
+      </div>
+      <div class="value-row">
+        <span class="idx">02</span>
+        <h4>ROI-Driven</h4>
+        <p>Automation projects planned and priced around payback, not novelty.</p>
+      </div>
+      <div class="value-row">
+        <span class="idx">03</span>
+        <h4>TPM-Based Reliability</h4>
+        <p>Maintenance built to extend asset life, not just react to failure.</p>
+      </div>
+      <div class="value-row">
+        <span class="idx">04</span>
+        <h4>Flexible Contracts</h4>
+        <p>Third-party maintenance agreements sized to your actual need.</p>
+      </div>
+      <div class="value-row">
+        <span class="idx">05</span>
+        <h4>End-to-End</h4>
+        <p>One partner for design, build, operate, and maintain.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-band">
+  <div class="container inner">
+    <span class="eyebrow" style="justify-content:center;">Let's Talk</span>
+    <h2 class="reveal">Tell us what's broken, outdated, or manual.</h2>
+    <div class="btn-row reveal">
+      <a href="contact.html" class="btn btn-primary">Request a Quote
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="projects.html" class="btn btn-outline">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><img src="assets/img/logo.png" alt="AMSC FactoryLink logo"></span>
+          <span class="brand-name">AMSC FactoryLink<span>Industrial Engineering Services</span></span>
+        </a>
+        <p>Process mechanization, mechanical &amp; electronic integration, automation, and third-party maintenance for manufacturers across the Philippines.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Sitemap</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Process Mechanization</a></li>
+          <li><a href="services.html">Automation &amp; PLC/HMI</a></li>
+          <li><a href="services.html">Lean Manufacturing</a></li>
+          <li><a href="services.html">Third-Party Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul>
+          <li>0919 098 8413</li>
+          <li><a href="mailto:amsc_factorylink@hotmail.com">amsc_factorylink@hotmail.com</a></li>
+          <li>Dasmariñas, Cavite &amp; Cabuyao, Laguna</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AMSC FactoryLink Industrial Engineering Services. All rights reserved.</span>
+      <span>Service at the core, trading with purpose.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
